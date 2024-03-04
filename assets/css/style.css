@@ -7,8 +7,54 @@
 
 /* -------- Element Selectors -------- */
 
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
 body {
     background-color: #d9dcd6;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 a {
@@ -20,42 +66,11 @@ p {
     font-size: 16px;
 }
 
-/* -------- Header -------- */
+/* Class Selectors */
 
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* -------- Hero Figure Section -------- */
 
 .hero {
     height: 800px;
@@ -70,14 +85,6 @@ header nav ul li {
     object-position: center;
 }
 
-/* -------- Main Section -------- */
-
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
 .main-section-cards {
     margin-bottom: 20px;
     padding: 50px;
@@ -86,27 +93,6 @@ main {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.main-section-cards img {
-    max-height: 200px;
-}
-
-.main-section-cards h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.img-float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.img-float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-/* -------- Aside Section -------- */
 
 .benefits {
     margin-right: 20px;
@@ -119,9 +105,30 @@ main {
     background-color: #2589bd;
 }
 
+.img-float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.img-float-right {
+    float: right;
+    margin-left: 25px;
+}
+
 .benefit-sections {
     margin-bottom: 32px;
     color: #ffffff;
+}
+
+/* Element selectors within class selectors */
+
+.main-section-cards img {
+    max-height: 200px;
+}
+
+.main-section-cards h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .benefit-sections h3 {
@@ -133,17 +140,4 @@ main {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-/* -------- Footer Section -------- */
-
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-footer h4 {
-    font-size: 20px;
 }
